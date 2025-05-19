@@ -117,3 +117,15 @@
             background-color: #c72c73;
             text-decoration: none;
         }
+
+        #About {
+            scroll-margin-top: 100px;
+        }
+
+        #Developer {
+            scroll-margin-top: 100px;
+        }
+
+        #Game {
+            scroll-margin-top: 100px;
+        }
