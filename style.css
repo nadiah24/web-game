@@ -1,11 +1,119 @@
 .text {
-    color: #ff1e69;
-}
+            color: #d63384;
+        }
 
-.text2 {
-    color: #d05e84;
-}
+        .bg {
+            background-color: #d63384;
+        }
 
-.bg {
-    background-color: #ff1e69;
-}
+        .bg-team {
+            background: linear-gradient(to bottom, #ff669e, #ffffff);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe0f0, #ffd1dc);
+        }
+
+        .bg-header {
+            background: linear-gradient(135deg, #f78fb3, #f8a5c2);
+        }
+
+        .text-judul {
+            color: #d63384;
+            font-weight: 700;
+        }
+
+        #About {
+            background-color: #fff0f5;
+            border-radius: 30px;
+            padding: 50px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #About ul {
+            padding-left: 1.2rem;
+        }
+
+        #About ul li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        #About h5 {
+            font-weight: 600;
+            color: #e83e8c;
+            margin-top: 20px;
+        }
+
+        .about-img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            .about-img {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 40%;
+            }
+        }
+
+        #Developer {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-top: 40px;
+            color: #d63384;
+            position: relative;
+            display: inline-block;
+        }
+
+        #Developer::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background-color: #d63384;
+            bottom: -6px;
+            left: 20%;
+            border-radius: 2px;
+        }
+
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            color: #e83e8c;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        .developer-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        #Game .btn:hover {
+            background-color: #c72c73;
+            text-decoration: none;
+        }
