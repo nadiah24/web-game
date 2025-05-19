@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe4ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    color: #d63384;
+    margin-bottom: 5px;
+  }
+
+  .info {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #a61e4d;
+  }
+
+  .game-board {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff0f6;
+    border: 3px solid #f783ac;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: #d6336c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .card.flipped {
+    background-color: #fff;
+  }
+
+  .card.matched {
+    background-color: #ffe8f0;
+    border-color: #ffb3c6;
+    cursor: default;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* jarak antar tombol */
+    flex-wrap: wrap; /* biar responsif di layar kecil */
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    padding: 10px 25px;
+    background-color: #f783ac;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #e64980;
+    transform: translateY(-2px);
+  }
+  
+
+  .card {
+      transition: transform 0.4s ease, background-color 0.4s ease;
+  }
+
+  .card:hover {
+      transform: scale(1.05);
+  }
+
+  .card.flipped {
+      transform: rotateY(180deg);
+      background-color: #fff;
+  }
+
+  .card.matched {
+      animation: pop 0.4s ease forwards;
+  }
+
+  @keyframes pop {
+      0% { transform: scale(1); background-color: #fff0f6; }
+      50% { transform: scale(1.2); background-color: #ffb3c6; }
+      100% { transform: scale(1); background-color: #ffe8f0; }
+  }
+  
